@@ -1,0 +1,9 @@
+.Post {
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+}
+
+.PostImage {
+  height: 120px;
+}

@@ -1,22 +1,18 @@
-
 header {
-    color: blue
+  color: blue;
 }
 
-/* .main-wrapper {
-} */
-
 .user {
-    padding: 10px;
-    margin: 5px 5px;
-    box-shadow: 0 2px 3px lightgray;
+  padding: 10px;
+  margin: 5px 5px;
+  box-shadow: 0 2px 3px lightgray;
+  background-color: white;
+  color: black;
 }
 
 .email {
-    color: darkgray;
-    font-size: 10px;
-    margin: auto;
-    margin-top: -15px;
+  color: darkgray;
+  font-size: 10px;
+  margin: auto;
+  margin-top: -15px;
 }
-
-

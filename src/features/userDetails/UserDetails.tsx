@@ -11,6 +11,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Container } from '@material-ui/core';
 import TabPanel from 'components/TabsPanel';
+import Posts from 'features/posts/Posts';
 
 interface RouteParams {
   id: string;
@@ -61,10 +62,10 @@ const UserDetails: React.FC<RouteComponentProps<RouteParams>> = (props) => {
               <Tab label='Todos' {...a11yProps(1)} />
             </Tabs>
             <TabPanel value={value} index={0}>
-              <p>user posts and comments</p>
+              <Posts userId={userId} />
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <p>todos</p>
+              <span>todos</span>
             </TabPanel>
           </Container>
         </Grid>

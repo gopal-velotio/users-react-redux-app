@@ -1,4 +1,3 @@
-
 import styles from './Users.module.css';
 
 export interface UserProps {
@@ -10,11 +9,18 @@ export interface UserProps {
   title: string;
 }
 
-const User: React.FC<UserProps> = (props) => {
+const User: React.FC<UserProps> = ({
+  id,
+  picture,
+  email,
+  firstName,
+  lastName
+}) => {
   return (
     <div className={styles.user}>
-      <img src={props.picture} alt={props.firstName} />
-      <p>{props.firstName + ' ' + props.lastName} </p>
+      <img height='84' width='84' src={picture} alt={firstName} />
+      <p>{`${firstName} ${lastName}`} </p>
+      <p className={styles.email}>{email}</p>
     </div>
   );
 };

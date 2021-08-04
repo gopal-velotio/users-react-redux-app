@@ -4,6 +4,7 @@ import axios from 'axios/axiosInstance';
 import IUser from 'features/users/usersSlice';
 
 interface IPost {
+  id: string;
   text: string;
   image: string;
   likes: number;
@@ -27,7 +28,6 @@ export const fetchPostsAsync = createAsyncThunk(
   'posts/fetchPosts',
   async (userId: string) => {
     try {
-      console.log(userId);
       const res = await axios.get(`/user/${userId}/post`);
       console.log(res.data);
       return res.data.data;

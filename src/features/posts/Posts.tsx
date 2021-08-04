@@ -27,6 +27,7 @@ const Posts: React.FC<PostsProps> = (props) => {
               return (
                 <Grid key={i} item>
                   <Post
+                    id={post.id}
                     text={post.text}
                     image={post.image}
                     likes={post.likes}
